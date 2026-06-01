@@ -13,15 +13,35 @@ export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500))
-    
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+  e.preventDefault()
+  setIsSubmitting(true)
+
+  const form = e.currentTarget
+
+  try {
+    const response = await fetch(
+      "https://formspree.io/f/mvzyjdpe",
+      {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+          Accept: "application/json",
+        },
+      }
+    )
+
+    if (response.ok) {
+      setIsSubmitted(true)
+      form.reset()
+    } else {
+      alert("Failed to send message.")
+    }
+  } catch (error) {
+    alert("Something went wrong.")
   }
+
+  setIsSubmitting(false)
+}
 
   return (
     <section id="contact" className="py-32 relative overflow-hidden">
