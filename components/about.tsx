@@ -4,15 +4,15 @@ import { motion } from "framer-motion"
 import { CheckCircle2 } from "lucide-react"
 
 const stats = [
-  { value: "12+", label: "Years Experience" },
-  { value: "200+", label: "Integrations Delivered" },
-  { value: "99%", label: "Client Satisfaction" },
+  { value: "10+", label: "Years Experience" },
+  { value: "5+", label: "Certified across 5 platforms" },
+  { value: "99%", label: "Delivery Focus" },
   { value: "24/7", label: "Support Available" },
 ]
 
 const expertise = [
   "Deep NetSuite ecosystem knowledge spanning development, administration, and optimization",
-  "Proven track record with Fortune 500 companies and high-growth startups alike",
+  "Deep experience across eCommerce, 3PL, and logistics sectors serving mid-market to enterprise clients companies and high-growth startups alike",
   "Agile methodology ensuring rapid delivery without compromising quality",
   "Continuous innovation staying ahead of platform updates and industry trends",
 ]
