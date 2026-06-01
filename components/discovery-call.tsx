@@ -45,12 +45,12 @@ export function DiscoveryCall() {
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
               <span className="text-foreground">Book Your Free</span>
               <br />
-              <span className="text-gold-gradient">Discovery Call</span>
+              <span className="text-gold-gradient">Free Consultation</span>
             </h2>
 
             <p className="text-lg text-muted-foreground leading-relaxed mb-12 max-w-2xl mx-auto">
-              Let&apos;s discuss your integration challenges and explore how Syntara can 
-              transform your business operations. No commitment, just expert insights.
+        Discuss your NetSuite, Celigo, Shopify or integration challenges with an experienced consultant. No obligation, just practical advice and recommendations. 
+              
             </p>
           </motion.div>
 
@@ -90,13 +90,16 @@ export function DiscoveryCall() {
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 text-lg font-semibold group"
             >
-              <a href="#contact">
-                Schedule Your Call
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </a>
+              <a href="https://calendar.zoho.in/zc/view/slot-booking/zz080212305a85598bb2b60ec0f2fa750df164a42cc829f88a17cdda3e967e833881fbc238b97d5e2075b757e2882e22b59b87ea9d"
+               target="_blank"
+                rel="noopener noreferrer"
+              >
+              Book Free Consultation
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </a>
             </Button>
             <p className="mt-4 text-sm text-muted-foreground">
-              No obligation • Typically responds within 24 hours
+              Free 30-minute consultation • Instant online scheduling
             </p>
           </motion.div>
         </div>
